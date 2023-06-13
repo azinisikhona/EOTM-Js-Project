@@ -35,6 +35,10 @@ form { max-width:420px; margin:50px auto;
     }
 }
 
+div {
+    margin-top: 10px;
+    text-align: center;
+}
 
 .feedback-input {
   color:black;
