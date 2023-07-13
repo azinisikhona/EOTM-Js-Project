@@ -79,3 +79,30 @@ textarea {
   font-weight:700;
 }
 [type="submit"]:hover { background:white; }
+
+table, tr, th, td {
+    border:1px solid white;
+    width: 300px;
+    text-align: center;
+}
+.down{
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 365px;
+    background-color: #d9d9d9;
+    padding: 10px;
+    color: black;
+}
+
+.checkout button {
+    width: max-content;
+    margin-inline: auto;
+    border: none;
+    transition: 0.4s;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: #222942;
+}
