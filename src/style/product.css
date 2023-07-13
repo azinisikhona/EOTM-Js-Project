@@ -1,0 +1,133 @@
+#navStyle {
+    margin: 1rem;
+    background-color: #222942;
+    border-radius: 20px;
+    color: white;
+    width: 90px;
+    text-align: center;
+}
+
+#navStyle:hover {
+    background-color: transparent;
+    color: black;
+
+}
+
+#navStyle::after {
+    background-color: transparent;
+}
+
+@media screen and (max-width: 992px){
+    #navStyle {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+h2{
+    color: white !important;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.product-card{
+    flex: 1;
+    padding-inline: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #d9d9d9;
+    margin-bottom: 20px;
+    height: 650px;
+    border-radius: 10px;
+    /* padding: 5px; */
+}
+
+.product-card img{
+    height: 350px;
+    border: none;
+}
+
+.product-card h3{
+    font-size: 1.5rem;
+}
+
+.product-card button{
+    width: max-content;
+    margin-inline: auto;
+    border: none;
+    transition: 0.4s;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: #222942;
+}
+
+.product-card button:hover{
+    color: rgb(44, 44, 44);
+    background-color: transparent;
+    scale: 1.1;
+    filter: drop-shadow(-4px 4px 4px #000);
+}
+
+@media screen and (max-width:893px) {
+    #RnB{
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+
+    #RnB > div{
+        width: 80%;
+    } 
+
+    #Pop{
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+
+    #Pop > div{
+        width: 80%;
+    } 
+
+    #Soul{
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+
+    #Soul > div{
+        width: 80%;
+    } 
+
+    #Rap{
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+
+    #Rap > div{
+        width: 80%;
+    } 
+
+    .product-card{
+        height: max-content;
+        padding: 5px;
+    }
+
+    .product-card button {
+        width: max-content;
+    }
+}
+
+table, tr, th, td {
+    border:1px solid white;
+    width: 300px;
+    text-align: center;
+}
