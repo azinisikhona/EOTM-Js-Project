@@ -51,7 +51,7 @@
                   <a class="nav-link" id="navStyle" href="/src/pages/admin.html">Admin</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="navStyle" href="/src/pages/checkout.html">Checkout</a>
+                  <a class="nav-link btn btn-primary" data-bs-toggle="offcanvas" id="navStyle" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Checkout</a>
                 </li>
               </ul>
             </div>
@@ -59,7 +59,36 @@
         </nav>
       </header>
 
-      <div>
+      <div class="offcanvas offcanvas-start text-white" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background-color: #222942;">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Checkout</h5>
+          <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="cart-container" id="cart-body1">
+            <table style="width: 100%;">
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Name</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                  <th>BTN</th>
+                </tr>
+              </thead>
+              <tbody id="table">
+
+              </tbody>
+              
+            </table>
+          </div>
+          <div id="total">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="contact">
         <h3 class="text-white"><b>Contact Us</b></h3>
         <form action="https://formspree.io/f/xwkjgppd" method="POST">      
           <input name="name" type="text" class="feedback-input" placeholder="Name" required />   
