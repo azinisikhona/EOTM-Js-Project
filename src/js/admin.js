@@ -160,7 +160,7 @@ function displayAdminProducts() {
             <td class="text-center">R ${adminProduct.price}</td>
             <td class="text-center">${adminProduct.genre}</td>
             <td>
-                <button class="deleteBtn px-2 bg-black text-white fw-bold border-white" onclick="deleteProducts(${adminProduct.id})"> X </button>
+                <button class="deleteBtn px-2text-white fw-bold border-white" onclick="deleteProducts(${adminProduct.id})" style="background-color: red;"> X </button>
             </td>
             `;
             listProducts.appendChild(adminTable);

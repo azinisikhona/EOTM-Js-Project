@@ -178,7 +178,7 @@ function updateCart() {
     <td><img src="${product.image}" height="30px"></img></td>
     <td>${product.name}</td>
     <td>R${product.price}</td>
-    <td><button onclick="deleteFromCart(${index})" class="delbtn">X</button></td>`;
+    <td><button onclick="deleteFromCart(${index})" class="deleteBtn" style="background-color: red;">X</button></td>`;
     cartContainer.appendChild(cartProduct);
   });
   calculateTotal();

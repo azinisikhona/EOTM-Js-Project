@@ -84,7 +84,7 @@ main > .col-md-11 > div {
 
 }
 
-table, tr, th, td {
+table, tr  th, td {
     border:1px solid white;
     width: 300px;
     text-align: center;
