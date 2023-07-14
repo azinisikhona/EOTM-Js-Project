@@ -138,12 +138,12 @@ function addProducts() {
     const id = Math.floor(Math.random());
     const adminProduct = {
         id,
-        image: document.getElementById("image").value,
-        name: document.getElementById("productName").value,
-        price: parseFloat(document.getElementById("productPrice").value),
-        genre: document.getElementById("productGenre").value,
+        image: document.getElementById("image"),
+        name: document.getElementById("productName"),
+        price: parseFloat(document.getElementById("productPrice")),
+        genre: document.getElementById("productGenre"),
     }
-    adminProducts.push(adminProduct);
+    adminProducts.push(Product);
     localStorage.setItem("catalogue", JSON.stringify(adminProducts));
     displayAdminProducts();
 }
