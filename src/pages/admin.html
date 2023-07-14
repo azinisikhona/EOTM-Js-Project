@@ -91,26 +91,33 @@
           </div>
         </div>
       </div>
-
-      <div class="container justify-content-center">
-        <hr>
-        <h1 class="display-5 fs-4 text-center">Admin</h1>
-        <hr>
-    <form action="" class="row justify-content-center" id="productForm">
-        <div class="mb-2"><input type="text" name="" id="image" placeholder="Image URL..." required></div>
-        <div class="mb-2"><input type="text" id="productName" placeholder="Product Name..." required></div>
-        <div class="mb-2"><input type="number" id="productPrice" placeholder="Product Price..." required></div>
-        <div class="mb-2"><input type="text" id="productCategory" id="productGenre" placeholder="Genre..." required></div>
-        <div class="mb-2"><button type="submit" id="addToStore">Add to Store</button></div>
-    </form>
+    
+      <div class="update-products">
+          <h1 class="display-5 fs-4 text-center">Admin</h1>
+          <form action="" id="productForm">
+            <input type="text" class="add-product" id="image" placeholder="Image URL..." required>
+            <input type="text" class="add-product" id="productName" placeholder="Product Name..." required>
+            <input type="number" class="add-product" id="productPrice" placeholder="Product Price..." required>
+            <select class="add-product" id="productGenre" required>
+              <option value=""></option>
+              <option value="RnB">RnB</option>
+              <option value="Pop">Pop</option>
+              <option value="Soul">Soul</option>
+              <option value="Rap">Rap</option>
+              <option value="Other">Other</option>
+            </select>
+            <button id="addToStore">Add To Store</button>
+          </form>
+      </div>
+    
 </div>
 <table class="text-white" id="product-table">
-    <thead>
+    <thead class="thead-2">
         <th class="border-1 px-5">Image URL</th>
         <th class="border-1 px-5">Name</th>
         <th class="border-1 px-5">Price</th>
-        <th class="border-1 px-5">Category</th>
-        <th class="border-1 px-5">Quantity</th>
+        <th class="border-1 px-5">Genre</th>
+        <th class="border-1 px-5">Delete</th>
     </thead>
     <tbody id="productList"></tbody>
 </table>
@@ -189,9 +196,6 @@
                   <li>
                       <a href="/src/pages/admin.html" class="text-white">Admin</a>
                   </li>
-                  <li>
-                      <a href="/src/pages/checkout.html"class="text-white">Checkout</a>
-                  </li>
                 </ul>
               </div>
   
@@ -221,7 +225,6 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"
       ></script>
-      <scrip src="/src/js/admin.js"></script>
-      <script src="/src/js/index.js"></script>
+      <script src="/src/js/admin.js"></script>
 </body>
 </html>

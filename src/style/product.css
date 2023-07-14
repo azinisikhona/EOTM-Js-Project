@@ -41,7 +41,7 @@ h2{
     margin-bottom: 20px;
     height: 650px;
     border-radius: 10px;
-    /* padding: 5px; */
+    padding: 5px;
 }
 
 .product-card img{
@@ -71,7 +71,7 @@ h2{
     filter: drop-shadow(-4px 4px 4px #000);
 }
 
-@media screen and (max-width:893px) {
+@media screen and (max-width:918px) {
     #RnB{
         align-items: center;
         flex-direction: column;
@@ -80,7 +80,7 @@ h2{
 
 
     #RnB > div{
-        width: 80%;
+        width: 100% !important;
     } 
 
     #Pop{
@@ -91,7 +91,7 @@ h2{
 
 
     #Pop > div{
-        width: 80%;
+        width: 100% !important;
     } 
 
     #Soul{
@@ -102,7 +102,7 @@ h2{
 
 
     #Soul > div{
-        width: 80%;
+        width: 100% !important;
     } 
 
     #Rap{
@@ -113,7 +113,7 @@ h2{
 
 
     #Rap > div{
-        width: 80%;
+        width: 100% !important;
     } 
 
     .product-card{
